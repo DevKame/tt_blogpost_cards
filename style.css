@@ -1,0 +1,73 @@
+
+body {
+    background-color: #f5f5dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding-top: 50px;
+}
+.card {
+    position: relative;
+    width: 20%;
+    aspect-ratio: .6;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .3s ease;
+    background-color: beige;
+    overflow: hidden;
+    box-shadow: 0 0 15px 3px #888;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.cardpic {
+    width: 100%;
+    flex: 3;
+    transition: all .3s ease;
+}
+.travel {
+    background:
+    url("./lake.jpg") no-repeat padding-box 30% 0 / 200%;
+}
+.food {
+    background:
+    url("./food.jpg") no-repeat padding-box 30% 0 / 200%;
+}
+.job {
+    background:
+    url("./jobs.jpg") no-repeat padding-box 30% 0 / 200%;
+}
+.card:hover .cardpic {
+    background-position: 50%;
+    background-size: 300%;
+}
+.cardinfo {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 15px 5px;
+    background: #ddd;
+}
+.cardinfo h5 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: rgb(133, 133, 201);
+}
+.cardinfo h3 {
+    margin-top: 10%;
+}
+.cardinfo p {
+    margin-top: auto;
+}
+a {
+    text-decoration: none;
+    color: rgb(123, 171, 187);
+}
